@@ -62,7 +62,11 @@ cd /home/user/Docs
 ## Otros comandos básicos
 
 * `whoami` Muestra el usuario actual.
-* `cal` Muestra calendario.
+* `cal` Muestra calendario en un formato clásico de cuadrícula de pared.
+	* `cal -m 8` Muestra calendario del mes especifico
+	* `cal -3` Muestra calendario del mes anterior, el actual y el sgte.
+* `ncal` Muestra los días de la semana en formato vertical.
+	* `ncal -b` Muestra el calendario en formato tradicional (cal).
 * `date` Muestra la fecha y hora actuales.
 * `uptime` Tiempo encendido del sistema.
 * `hostname` Nombre del equipo.
