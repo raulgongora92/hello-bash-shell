@@ -24,7 +24,7 @@
 *  Guardar cambios: `Ctrl/Cmd + O`, luego `Enter`
 *  Salir: `Ctrl/Cmd + X` (si hay cambios sin guardar, preguntará)
 *  Ayuda: `Ctrl/Cmd + G`
-*  Buscar texto: `Ctrl/Cmd + W`
+*  Buscar texto: `Ctrl/Cmd + F` en caso que la palabra se repita se puede usar a la siguente con `Alt + W`
 *  Cortar línea: `Ctrl/Cmd + K`
 *  Pegar línea: `Ctrl/Cmd + U`
 
