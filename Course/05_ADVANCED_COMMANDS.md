@@ -78,7 +78,9 @@ Las variables globales viven más allá de la sesión (en todos los programas la
 
 **Creación de una variable global:**
 
-* `export NOMBRE_VARIABLE="valor asociado a la variable"`
+* `export NOMBRE_VARIABLE="valor asociado a la variable"` 
+* Ejemplo: `export NOMBRE="Raul Gongora"`
+
 
 **Creación de una variable global permanente:**
 
