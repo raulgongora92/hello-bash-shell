@@ -108,7 +108,10 @@ Los comodines permiten trabajar con varios archivos de forma rápida. Se pueden 
   - `tree -a` Muestra también los directorios y archivos ocultos.
 - `find . -name "nombre"` Encuentra archivos por nombre en el directorio actual. Ej: `find . -name "*o.txt"`
   - `find dir -name "*.log"` Encuentra archivos por criterio de búsqueda (todos los *log*, por ejemplo) en el directorio especificado. Ej: `find Course/ -name "*O*.md"`
-  - `find Course/ -iname "*O*.md"` Para buscar archivos sin hacer distinción entre mayúsculas y minúsculas con el comando `iname` o `find Course/ -name "*[oO]*.md"`
+  - `find Course/ -iname "*O*.md"` Para buscar archivos sin hacer distinción entre mayúsculas y minúsculas.
+  - `find . -type f -mtime -5` Buscar archivos modificados en los últimos N días (modificados hace menos de 5 días)
+  - `find . -type f -perm 755` Buscar archivos por permisos específicos.
+  - `find . -type f -name "*.log"` o `find . -type d -name "nombre_dir"` Buscar solo archivos (f) o directorios (d):
 
 > [!NOTE]
 >
