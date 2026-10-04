@@ -25,6 +25,9 @@ echo $0
 	* `ls -l` Muestra los archivos en formato largo.
 	* `ls -a` Muestra todos los archivos, incluidos los ocultos.
 	* `ls -lh` Como `-l` pero el tamaño de los archivos aparece en formato *"human-readable"*.
+* `xdg-open` Abre el directorio en el explorador de archivos predeterminado de tu entorno gráfico.
+	* `xdg-open .` Abre el directorio actual
+	* `xdg-open Course/` Abre el directorio de la ruta que se le pase, `xdg-open ../Fundamentos/`
 
 ## Comandos de Navegación
 
@@ -83,6 +86,7 @@ comando [opciones] [argumentos]
 * `comando` es lo que quieres ejecutar (`ls`).
 * `opciones` modifican el comportamiento (`-l`)
 * `argumentos` son los datos sobre los que actúa (`archivo.txt`, `directorio/`)
+Ejemplo: `ls -lh Practica/`, `ls -lh README.md`
 
 ## Ayuda y documentación
 
