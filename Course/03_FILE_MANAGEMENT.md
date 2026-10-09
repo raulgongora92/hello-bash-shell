@@ -47,6 +47,13 @@ ls /
 
 
 
+### Saber que tipo de extensión es el archivo
+
+- `file ../LICENSE`
+- Salida `../LICENSE: ASCII text`
+
+
+
 ### Copia de un archivo o directorio:
 
 - `cp nombre_archivo copia_archivo` Copia un archivo a otro en el directorio (como siempre, puede definirse otro directorio de destino).
@@ -93,7 +100,7 @@ Los comodines permiten trabajar con varios archivos de forma rápida. Se pueden 
 - `ls 03*` Muestra todos los archivos que comienzan por *03*.
 - `ls 03*.txt` Muestra todos los archivos que comienzan por *03* y tienen la extensión *txt*.
 - `ls ?????*` Muestra todos los archivos que tienen 5 o más caracteres.
-- `ls *.md Course/` Muestra todos los archivos con la extensión *md* de un directorio espedifico.
+- `ls Course/*.md` Muestra todos los archivos con la extensión *md* de un directorio especifico. Ej: `ls Course/19*.md`
 - `rm ?.txt` Elimina todos los archivos con un nombre de un único caracter y la extensión *txt*.
 - `rm a????` Elimina todos los archivos que comiencen por *a* y tengan 5 caracteres.
 
@@ -108,25 +115,24 @@ Los comodines permiten trabajar con varios archivos de forma rápida. Se pueden 
 - `tree` Muestra un árbol de directorios y archivos.
   - `tree -a` Muestra también los directorios y archivos ocultos.
   - `tree -L 2` limita la profundidad a 2 niveles.
-  - `tree -I "xxxx` Ignora ciertos directorios. Ej: `tree -I "Scripts"`. 
-
+  - `tree -I "xxxx` Ignora ciertos directorios. Ej: `tree -I "Scripts"`.
 - `find . -name "nombre"` Encuentra archivos por nombre en el directorio actual. Ej: `find . -name "*o.txt"`
   - `find dir -name "*.log"` Encuentra archivos por criterio de búsqueda (todos los *log*, por ejemplo) en el directorio especificado. Ej: `find Course/ -name "*O*.md"`
   - `find Course/ -iname "*O*.md"` Para buscar archivos sin hacer distinción entre mayúsculas y minúsculas.
   - `find . -type f -mtime -5` Buscar archivos modificados en los últimos N días (modificados hace menos de 5 días)
   - `find . -type f -perm 755` Buscar archivos por permisos específicos.
-  - `find . -type f -name "*.log"` o `find . -type d -name "nombre_dir"` Buscar solo archivos (f) o directorios (d):
+  - `find . -type f -name "*.sh"` o `find . -type d -name "prueba"` Buscar solo archivos (f) o directorios (d)
 
 > [!NOTE]
 >
-> - El comando `tree` no está instalado por defecto. Ten en cuenta cómo hacerlo según tu sistema operativo y el gestor de paquetes empleado (por ejemplo *apt* o *homebrew*, entre otros).
+> - El comando `tree` no está instalado por defecto. Ten en cuenta cómo hacerlo según tu sistema operativo y el gestor de paquetes empleado (por ejemplo *apt* o *homebrew*, entre otros). `sudo apt install tree`
 > - El comando `ls` muestra la lista de un directorio especifico.
 > Ej:  `ls *.md` -> README.md
-> - El comando `find` busca de manera recursiva en subcarpetas que esten en ese directorio de referencia. 
+> - El comando `find` busca de manera recursiva en subcarpetas que esten en ese directorio de referencia. Hay que incluir la extension del archivo para la busqueda. 
 > Ej: `find . -name "*.md"` ->
 > ./README.md
 > ./Course/18_CRON_EXERCISES.md
-> ./Course/06_ADVANCED_COMMANDS_EXERCISES.md 
+> ./Course/06_ADVANCED_COMMANDS_EXERCISES.md
 
 ---
 
