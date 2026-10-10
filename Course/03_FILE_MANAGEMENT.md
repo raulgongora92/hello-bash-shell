@@ -79,14 +79,12 @@ ls /
 > ✋ La opción `f` (force) en `rm -rf` es muy peligrosa ya que no pide confirmación ni muestra errores si el directorio no existe.
 
 
-
 ## Wildcard (comodines)
 
 Los comodines permiten trabajar con varios archivos de forma rápida. Se pueden combinar entre ellos. Se pueden combinar con diferentes comandos.
 
 - `*` Cero o más caracteres.
 - `?` Exactamente un caracter.
-
 
 
 ### Ejemplos:
@@ -103,7 +101,6 @@ Los comodines permiten trabajar con varios archivos de forma rápida. Se pueden 
 > [!TIP]
 >
 > Puedes realizar combinaciones de todo tipo con comandos y comodines.
-
 
 
 ## Listados avanzados
